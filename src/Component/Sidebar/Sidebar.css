@@ -1,0 +1,40 @@
+
+/* Sidebar styling */
+.sidebar {
+    width: 350px; /* Ensure this is the correct width */
+    height: 100vh; /* Full height */
+    background-color: #94cfe7; /* Example color */
+    padding-top: 20px; /* Padding at the top */
+    border-right: 1px solid #ddd; /* Border between sidebar and content */
+    transition: transform 0.3s ease; /* Smooth transition for open/close */
+    position: fixed; /* Fixed position to prevent scrolling issues */
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+  }
+
+.sidebar .MuiListItem-root {
+    padding: 15px 20px; /* Consistent padding for list items */
+    color: #ffffff; /* White text color for list items */
+}
+
+.sidebar .MuiListItem-root:hover {
+    background-color: #ffffff; /* Darker blue on hover */
+    color:#0071A6
+}
+
+.sidebar .MuiListItemText-root {
+    font-weight: bold; /* Bold text for list items */
+}
+
+.sidebar.closed {
+    transform: translateX(-300%); /* Slide sidebar off screen */
+}
+
+.sidebar.open {
+    transform: translateX(0); /* Slide sidebar into view */
+}
+.openitems .MuiListItem-root {
+    padding: 5px 20px; /* Consistent padding for list items */
+    color: #a7deda; /* White text color for list items */
+}
